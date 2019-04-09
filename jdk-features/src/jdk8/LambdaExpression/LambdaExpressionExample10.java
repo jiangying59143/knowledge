@@ -2,6 +2,7 @@ package jdk8.LambdaExpression;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class LambdaExpressionExample10{
@@ -19,6 +20,7 @@ public class LambdaExpressionExample10{
         Collections.sort(list,(p1, p2)->{
             return p1.name.compareTo(p2.name);
         });
+        //Collections.sort(list, Comparator.comparing(p2 -> p2.name));
         for(Product p:list){
             System.out.println(p.id+" "+p.name+" "+p.price);
         }
