@@ -13,7 +13,7 @@ public class LambdaEventListenerExample {
 
         // lambda expression implementing here.
 
-        b.addActionListener(e-> {tf.setText("hello swing");});
+        b.addActionListener(e-> tf.setText("hello swing"));
 
 //        b.addActionListener(new ActionListener() {
 //            @Override
